@@ -3,6 +3,8 @@ package net.minikloon.fsmgasm
 import java.time.Duration
 
 open class StateGroup(states: List<State> = emptyList()) : StateHolder(states) {
+    constructor(vararg states: State) : this(states.toList())
+
     override fun onStart() {
         states.forEach(State::start)
     }
