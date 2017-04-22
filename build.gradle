@@ -16,11 +16,11 @@ apply plugin: 'kotlin'
 
 repositories {
     mavenCentral()
-    maven { url "http://dl.bintray.com/minikloon/Kloggs" }
+    maven { url 'https://jitpack.io' }
 }
 
 dependencies {
     compile "org.jetbrains.kotlin:kotlin-stdlib-jre8:$kotlin_version"
     compile group: 'org.slf4j', name: 'slf4j-api', version: '1.7.25'
-    compile "net.minikloon.kloggs:kloggs:1.0.1"
+    compile 'com.github.Minikloon:Kloggs:-SNAPSHOT'
 }
