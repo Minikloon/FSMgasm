@@ -53,7 +53,7 @@ open class StateSeries(states: List<State> = emptyList()) : StateHolder(states) 
     }
 
     override fun isReadyToEnd(): Boolean {
-        return states[current].isReadyToEnd() && current >= states.size && !frozen
+        return (current == states.size - 1 && states[current].isReadyToEnd()) && !frozen
     }
 
     override fun onEnd() {

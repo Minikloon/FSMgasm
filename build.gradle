@@ -1,5 +1,5 @@
 group 'net.minikloon.fsmgasm'
-version '1.0.6'
+version '1.0.7'
 
 buildscript {
     ext.kotlin_version = '1.1.1'

@@ -104,7 +104,3 @@ gradle-app.setting
 # gradle/wrapper/gradle-wrapper.properties
 
 # End of https://www.gitignore.io/api/java,gradle,intellij
-.idea/inspectionProfiles/
-src/main/java/
-src/main/resources/
-src/test/
