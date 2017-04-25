@@ -42,7 +42,7 @@ abstract class State {
             updating = true
         }
         
-        if(isReadyToEnd()) {
+        if(isReadyToEnd() && !frozen) {
             end()
             return
         }
@@ -72,7 +72,7 @@ abstract class State {
     }
 
     open fun isReadyToEnd() : Boolean {
-        return ended || remainingDuration == Duration.ZERO && !frozen
+        return ended || remainingDuration == Duration.ZERO
     }
     
     protected abstract fun onEnd()
