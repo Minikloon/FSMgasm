@@ -21,7 +21,7 @@ Maven:
 <dependency>
   <groupId>com.github.Minikloon</groupId>
   <artifactId>FSMgasm</artifactId>
-  <version>5c7311ce64</version>
+  <version>-SNAPSHOT</version>
 </dependency>
 ```
 
