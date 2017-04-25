@@ -17,7 +17,7 @@ abstract class State {
     private lateinit var startInstant: Instant
     private val lock = Any()
     
-    fun start() {
+    open fun start() {
         synchronized(lock) {
             if(started || ended)
                 return
@@ -35,7 +35,7 @@ abstract class State {
     protected abstract fun onStart()
     
     private var updating = false
-    fun update() {
+    open fun update() {
         synchronized(lock) {
             if(!started || ended || updating)
                 return
@@ -56,8 +56,8 @@ abstract class State {
     }
     
     abstract fun onUpdate()
-    
-    fun end() {
+
+    open fun end() {
         synchronized(lock) {
             if(!started || ended)
                 return
