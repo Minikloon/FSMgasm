@@ -6,6 +6,8 @@ FSMgasm is a Kotlin [state machine](http://www.skorks.com/2011/09/why-developers
 It is useful to model complex systems, simplify code and facilitate code reuse. 
 The library is available under [MIT License](https://tldrlegal.com/license/mit-license).
 
+FSMgasm was initially developed for Minecraft minigames. [Here's a tutorial on how to use it with Spigot](https://www.spigotmc.org/threads/organizing-your-minigame-code-using-fsmgasm.235786/).
+
 # Install
 
 FSMgasm is available on Maven through Jitpack.
